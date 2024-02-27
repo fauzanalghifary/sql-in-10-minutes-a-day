@@ -42,7 +42,7 @@ and you will probably never need an inner join that is not a natural join.
 
 # example of inner join that is not a natural join
 
-SELECT Customers.cust_id, Orders.*
+SELECT *
 FROM Customers
 INNER JOIN Orders
 ON Customers.cust_id = Orders.cust_id;

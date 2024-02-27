@@ -1,11 +1,14 @@
 # AVG
 
-SELECT AVG(prod_price) AS avg_price
+SELECT prod_price AS avg_price
 FROM Products;
 
 SELECT AVG(prod_price) AS avg_price
-FROM Products
-WHERE vend_id = 'DLL01';
+FROM Products;
+
+SELECT AVG(P.prod_price) AS avg_price
+FROM Products as P
+WHERE P.vend_id = 'DLL01';
 
 # COUNT
 
@@ -16,6 +19,9 @@ SELECT COUNT(cust_email) AS num_cust -- count only rows where cust_email is not 
 FROM Customers;
 
 # MAX
+
+SELECT *
+FROM Products;
 
 SELECT MAX(prod_price) AS max_price
 FROM Products;
@@ -39,6 +45,10 @@ FROM OrderItems
 WHERE order_num = 20005;
 
 # using DISTINCT
+
+SELECT prod_price
+FROM Products
+WHERE vend_id = 'DLL01';
 
 SELECT AVG(DISTINCT prod_price) AS avg_price
 FROM Products

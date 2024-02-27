@@ -21,7 +21,7 @@ SELECT order_num, order_date
 FROM Orders
 WHERE YEAR(order_date) = 2020;
 
-SELECT order_num, order_date
+SELECT order_num, order_date, MONTHNAME(order_date)
 FROM Orders
 WHERE MONTH(order_date) BETWEEN 2 AND 6;
 

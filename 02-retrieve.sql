@@ -9,7 +9,7 @@ FROM Products;
 
 # Retrieving Distinct Rows
 
-SELECT vend_id
+SELECT vend_id, prod_price
 FROM Products;
 
 SELECT DISTINCT vend_id
@@ -27,7 +27,8 @@ LIMIT 5;
 
 SELECT prod_name
 FROM Products
-LIMIT 5 OFFSET 5;
+LIMIT 5
+OFFSET 5;
 
 # Comment
 

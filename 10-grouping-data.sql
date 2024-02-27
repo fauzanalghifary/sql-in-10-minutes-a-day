@@ -1,5 +1,18 @@
 # GROUP BY
 
+SELECT *
+FROM Products
+ORDER BY vend_id;
+
+SELECT DISTINCT vend_id, AVG(prod_price)
+FROM Products
+ORDER BY vend_id;
+
+SELECT vend_id, MAX(prod_price)
+FROM Products
+GROUP BY vend_id
+ORDER BY vend_id;
+
 SELECT vend_id, COUNT(*) AS num_prods
 FROM Products
 GROUP BY vend_id;
@@ -16,7 +29,7 @@ FROM Products
 GROUP BY vend_id
 HAVING COUNT(*) >= 2;
 
-SELECT vend_id, COUNT(*) AS num_prods
+SELECT vend_id, COUNT(*) AS num_prods_yang_di_atas_empat_dollar
 FROM Products
 WHERE prod_price >= 4
 GROUP BY vend_id
@@ -40,8 +53,11 @@ ORDER BY items, order_num;
 /*
 SELECT
 FROM
+JOIN ... ON ...
 WHERE
 GROUP BY
 HAVING
 ORDER BY
+LIMIT
+OFFSET
 */
