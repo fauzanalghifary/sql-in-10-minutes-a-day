@@ -1,4 +1,5 @@
 ### Note: THIS MAY BE DIFFERENT ON EACH DBMS
+### https://www.w3schools.com/mysql/mysql_ref_functions.asp
 
 # Text Manipulation Functions
 
